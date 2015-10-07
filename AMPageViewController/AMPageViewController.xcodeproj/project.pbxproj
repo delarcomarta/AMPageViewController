@@ -15,6 +15,8 @@
 		37F137E51BC5794C00A0D5A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F137E31BC5794C00A0D5A7 /* LaunchScreen.storyboard */; };
 		37F137F01BC5794C00A0D5A7 /* AMPageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F137EF1BC5794C00A0D5A7 /* AMPageViewControllerTests.m */; };
 		37F137FB1BC5794C00A0D5A7 /* AMPageViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F137FA1BC5794C00A0D5A7 /* AMPageViewControllerUITests.m */; };
+		37F1380B1BC57A4F00A0D5A7 /* APPChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F138091BC57A4F00A0D5A7 /* APPChildViewController.m */; settings = {ASSET_TAGS = (); }; };
+		37F1380C1BC57A4F00A0D5A7 /* APPChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F1380A1BC57A4F00A0D5A7 /* APPChildViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		37F137F61BC5794C00A0D5A7 /* AMPageViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMPageViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F137FA1BC5794C00A0D5A7 /* AMPageViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPageViewControllerUITests.m; sourceTree = "<group>"; };
 		37F137FC1BC5794C00A0D5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F138081BC57A4F00A0D5A7 /* APPChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPChildViewController.h; sourceTree = "<group>"; };
+		37F138091BC57A4F00A0D5A7 /* APPChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPChildViewController.m; sourceTree = "<group>"; };
+		37F1380A1BC57A4F00A0D5A7 /* APPChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPChildViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				37F137D91BC5794C00A0D5A7 /* AppDelegate.m */,
 				37F137DB1BC5794C00A0D5A7 /* ViewController.h */,
 				37F137DC1BC5794C00A0D5A7 /* ViewController.m */,
+				37F138081BC57A4F00A0D5A7 /* APPChildViewController.h */,
+				37F138091BC57A4F00A0D5A7 /* APPChildViewController.m */,
+				37F1380A1BC57A4F00A0D5A7 /* APPChildViewController.xib */,
 				37F137DE1BC5794C00A0D5A7 /* Main.storyboard */,
 				37F137E11BC5794C00A0D5A7 /* Assets.xcassets */,
 				37F137E31BC5794C00A0D5A7 /* LaunchScreen.storyboard */,
@@ -246,6 +254,7 @@
 				37F137E51BC5794C00A0D5A7 /* LaunchScreen.storyboard in Resources */,
 				37F137E21BC5794C00A0D5A7 /* Assets.xcassets in Resources */,
 				37F137E01BC5794C00A0D5A7 /* Main.storyboard in Resources */,
+				37F1380C1BC57A4F00A0D5A7 /* APPChildViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 				37F137DD1BC5794C00A0D5A7 /* ViewController.m in Sources */,
 				37F137DA1BC5794C00A0D5A7 /* AppDelegate.m in Sources */,
 				37F137D71BC5794C00A0D5A7 /* main.m in Sources */,
+				37F1380B1BC57A4F00A0D5A7 /* APPChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +508,7 @@
 				37F138011BC5794C00A0D5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37F138021BC5794C00A0D5A7 /* Build configuration list for PBXNativeTarget "AMPageViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				37F138041BC5794C00A0D5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37F138051BC5794C00A0D5A7 /* Build configuration list for PBXNativeTarget "AMPageViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				37F138071BC5794C00A0D5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
