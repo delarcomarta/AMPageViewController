@@ -60,8 +60,9 @@
 }
 
 - (APPChildViewController *)viewControllerAtIndex:(NSUInteger)index {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    APPChildViewController *childViewController = (APPChildViewController *)[storyboard instantiateViewControllerWithIdentifier:@"APPChildViewController"];
     
-    APPChildViewController *childViewController = [[APPChildViewController alloc] initWithNibName:@"APPChildViewController" bundle:nil];
     childViewController.index = index;
     
     return childViewController;

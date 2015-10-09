@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfz-eO-fsX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfz-eO-fsX">
                                 <rect key="frame" x="202" y="503" width="118" height="57"/>
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="0.97581249479999999" green="0.95938688520000004" blue="0.93179196119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -25,24 +25,12 @@
                                     <action selector="entrarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEh-Z6-Kbv"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-uS-1no" userLabel="Page Control View">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-uS-1no" userLabel="Page Control View">
                                 <rect key="frame" x="19" y="277" width="282" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="5Sh-aA-dEi"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99340969324111938" green="0.33042639493942261" blue="0.33035477995872498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Xfz-eO-fsX" secondAttribute="trailing" id="8lI-4S-fnt"/>
-                            <constraint firstItem="wIx-uS-1no" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rcs-4V-R5z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xfz-eO-fsX" secondAttribute="bottom" constant="8" id="VJD-MX-g5x"/>
-                            <constraint firstAttribute="bottom" secondItem="wIx-uS-1no" secondAttribute="bottom" constant="141" id="jOq-Z8-Q22"/>
-                            <constraint firstAttribute="trailing" secondItem="wIx-uS-1no" secondAttribute="trailing" constant="19" id="lQl-jo-GUL"/>
-                            <constraint firstItem="Xfz-eO-fsX" firstAttribute="top" secondItem="wIx-uS-1no" secondAttribute="bottom" constant="76" id="ruy-yt-2Qe"/>
-                            <constraint firstItem="Xfz-eO-fsX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="202" id="sJN-pg-09n"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -51,7 +39,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="339"/>
+            <point key="canvasLocation" x="331" y="323"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="X0M-nh-Cir">
+            <objects>
+                <viewController storyboardIdentifier="APPChildViewController" id="tmB-gi-Ryx" customClass="APPChildViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M4I-i5-XK3"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Uj-wQ-j81"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vTK-5R-sfw">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Screen #n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfM-Wl-3so">
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="282" height="150"/>
+                    <connections>
+                        <outlet property="screenNumber" destination="YfM-Wl-3so" id="IXW-Wc-VF9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWD-TT-Ib4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="384"/>
         </scene>
     </scenes>
 </document>
