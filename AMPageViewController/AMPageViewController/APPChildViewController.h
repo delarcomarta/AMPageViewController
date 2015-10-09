@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APPChildViewController : UIViewController
+@interface APPChildViewController : UIPageViewController<UIPageViewControllerDelegate, UIPageViewControllerDataSource>{
+    NSArray *myViewControllers;
+}
 
 @property (assign, nonatomic) NSInteger index;
 @property (strong, nonatomic) IBOutlet UILabel *screenNumber;

@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIPageViewControllerDataSource>
-
-@property (strong, nonatomic) UIPageViewController *pageController;
-@property (weak, nonatomic) IBOutlet UIView *pageControlView;
+@interface ViewController : UIViewController 
 - (IBAction)entrarAction:(id)sender;
 
 

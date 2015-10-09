@@ -25,55 +25,84 @@
                                     <action selector="entrarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEh-Z6-Kbv"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-uS-1no" userLabel="Page Control View">
-                                <rect key="frame" x="19" y="277" width="282" height="150"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xF9-Xw-OFN">
+                                <rect key="frame" x="0.0" y="293" width="320" height="142"/>
+                                <connections>
+                                    <segue destination="ibM-uu-2PX" kind="embed" id="3ua-gP-T5A"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.99340969324111938" green="0.33042639493942261" blue="0.33035477995872498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="pageControlView" destination="wIx-uS-1no" id="4cf-tT-fx4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="323"/>
+            <point key="canvasLocation" x="322" y="306"/>
         </scene>
-        <!--Child View Controller-->
-        <scene sceneID="X0M-nh-Cir">
+        <!--View Controller-->
+        <scene sceneID="bSx-GS-o64">
             <objects>
-                <viewController storyboardIdentifier="APPChildViewController" id="tmB-gi-Ryx" customClass="APPChildViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Intro1ID" id="nCW-lY-94F" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M4I-i5-XK3"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Uj-wQ-j81"/>
+                        <viewControllerLayoutGuide type="top" id="wKL-kc-EhH"/>
+                        <viewControllerLayoutGuide type="bottom" id="BHg-Ut-anN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vTK-5R-sfw">
-                        <rect key="frame" x="0.0" y="0.0" width="282" height="150"/>
+                    <view key="view" contentMode="scaleToFill" id="YHl-kj-01t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Screen #n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfM-Wl-3so">
-                                <rect key="frame" x="0.0" y="0.0" width="274" height="64"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pantalla 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqd-WY-1PI">
+                                <rect key="frame" x="69" y="24" width="182" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="282" height="150"/>
-                    <connections>
-                        <outlet property="screenNumber" destination="YfM-Wl-3so" id="IXW-Wc-VF9"/>
-                    </connections>
+                    <size key="freeformSize" width="320" height="142"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PWD-TT-Ib4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HQ-8A-gT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="384"/>
+            <point key="canvasLocation" x="471" y="990"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l0u-UR-RAa">
+            <objects>
+                <viewController storyboardIdentifier="Intro2ID" id="i7n-uq-CmJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OgQ-6E-MEI"/>
+                        <viewControllerLayoutGuide type="bottom" id="0nE-yu-GXl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P0K-6R-Hd4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pantalla 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDt-yA-E02">
+                                <rect key="frame" x="69" y="24" width="182" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="142"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yv8-EN-M3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="989.5"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="oLS-1z-bFv">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ibM-uu-2PX" customClass="APPChildViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIN-ds-knW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="335"/>
         </scene>
     </scenes>
 </document>

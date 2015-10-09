@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "APPChildViewController.h"
 
 @interface ViewController ()
 
@@ -19,7 +18,7 @@
     
     [super viewDidLoad];
     
-    self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+   /* self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageController.dataSource = self;
     [[self.pageController view] setFrame:[[self pageControlView] bounds]];
@@ -34,10 +33,8 @@
     [[self view] addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
     
-    [self performSelector:@selector(findPageControl) withObject:nil afterDelay:0.2f];
-    
+    [self performSelector:@selector(findPageControl) withObject:nil afterDelay:0.2f];*/
 }
-
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
@@ -45,21 +42,18 @@
     
 }
 
-- (void) findPageControl {
+
+
+
+/*- (void) findPageControl {
     [self performSelector:@selector(findPageControl) withObject:nil afterDelay:4.0f];
     NSLog(@"Change pager");
-    
-    /*  NSArray *subviews = self.view.subviews;
-     self.pageController = nil;
-     for (int i=0; i<[subviews count]; i++) {
-     if ([[subviews objectAtIndex:i] isKindOfClass:[UIPageControl class]]) {
-     self.pageController = (UIPageControl *)[subviews objectAtIndex:i];
-     }
-     }
-     [self pageController:0];*/
-}
+}*/
 
-- (APPChildViewController *)viewControllerAtIndex:(NSUInteger)index {
+
+
+
+/*- (APPChildViewController *)viewControllerAtIndex:(NSUInteger)index {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     APPChildViewController *childViewController = (APPChildViewController *)[storyboard instantiateViewControllerWithIdentifier:@"APPChildViewController"];
     
@@ -108,7 +102,7 @@
     // The selected item reflected in the page indicator.
     return 0;
 }
-
+*/
 
 
 - (IBAction)entrarAction:(id)sender {
