@@ -23,7 +23,7 @@
     self.pageController.dataSource = self;
     [[self.pageController view] setFrame:[[self pageControlView] bounds]];
     
-    APPChildViewController *initialViewController = [self viewControllerAtIndex:0];
+    ContainerViewController *initialViewController = [self viewControllerAtIndex:0];
     
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
@@ -53,9 +53,9 @@
 
 
 
-/*- (APPChildViewController *)viewControllerAtIndex:(NSUInteger)index {
+/*- (ContainerViewController *)viewControllerAtIndex:(NSUInteger)index {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    APPChildViewController *childViewController = (APPChildViewController *)[storyboard instantiateViewControllerWithIdentifier:@"APPChildViewController"];
+    ContainerViewController *childViewController = (ContainerViewController *)[storyboard instantiateViewControllerWithIdentifier:@"ContainerViewController"];
     
     childViewController.index = index;
     
@@ -65,7 +65,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     
-    NSUInteger index = [(APPChildViewController *)viewController index];
+    NSUInteger index = [(ContainerViewController *)viewController index];
     
     if (index == 0) {
         return nil;
@@ -80,7 +80,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     
-    NSUInteger index = [(APPChildViewController *)viewController index];
+    NSUInteger index = [(ContainerViewController *)viewController index];
     
     index++;
     

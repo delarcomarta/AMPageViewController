@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="849" y="989.5"/>
         </scene>
-        <!--Child View Controller-->
+        <!--Container View Controller-->
         <scene sceneID="oLS-1z-bFv">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ibM-uu-2PX" customClass="APPChildViewController" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ibM-uu-2PX" customClass="ContainerViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIN-ds-knW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882" y="335"/>

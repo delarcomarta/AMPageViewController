@@ -1,18 +1,18 @@
 //
-//  APPChildViewController.m
+//  ContainerViewController.m
 //  PageApp
 //
-//  Created by Rafael Garcia Leiva on 10/06/13.
-//  Copyright (c) 2013 Appcoda. All rights reserved.
+//  Created by Marta del Arco on 7/10/15.
+//  Copyright © 2015 Marta del Arco. All rights reserved.
 //
 
-#import "APPChildViewController.h"
+#import "ContainerViewController.h"
 
-@interface APPChildViewController ()
+@interface ContainerViewController ()
 
 @end
 
-@implementation APPChildViewController
+@implementation ContainerViewController
 
 
 - (void)viewDidLoad {
