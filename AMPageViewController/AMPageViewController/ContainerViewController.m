@@ -26,12 +26,12 @@
                             instantiateViewControllerWithIdentifier:@"Intro1ID"];
     UIViewController *p2 = [self.storyboard
                             instantiateViewControllerWithIdentifier:@"Intro2ID"];
-  /*  UIViewController *p3 = [self.storyboard
+    UIViewController *p3 = [self.storyboard
                             instantiateViewControllerWithIdentifier:@"Intro3ID"];
     UIViewController *p4 = [self.storyboard
-                            instantiateViewControllerWithIdentifier:@"Intro4ID"];*/
+                            instantiateViewControllerWithIdentifier:@"Intro4ID"];
     
-    myViewControllers = @[p1,p2];
+    myViewControllers = @[p1,p2,p3,p4];
     
     [self setViewControllers:@[p1]
                    direction:UIPageViewControllerNavigationDirectionForward
@@ -54,44 +54,50 @@
 - (void) findPageControl {
  [self performSelector:@selector(findPageControl) withObject:nil afterDelay:4.0f];
  NSLog(@"Change pager");
+    NSUInteger currentIndex = currentPageIndex;
     
+    ++currentIndex;
+    currentIndex = currentIndex % (myViewControllers.count);
+    
+    currentPageIndex=currentIndex;
+    
+    [self setViewControllers:@[[myViewControllers objectAtIndex:currentIndex]]
+                   direction:UIPageViewControllerNavigationDirectionForward
+                    animated:YES completion:nil];
  }
 
--(UIViewController *)viewControllerAtIndex:(NSUInteger)index
-{
+-(UIViewController *)viewControllerAtIndex:(NSUInteger)index{
     return myViewControllers[index];
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController
-     viewControllerBeforeViewController:(UIViewController *)viewController
-{
+     viewControllerBeforeViewController:(UIViewController *)viewController{
     NSUInteger currentIndex = [myViewControllers indexOfObject:viewController];
     
     --currentIndex;
     currentIndex = currentIndex % (myViewControllers.count);
+    currentPageIndex=currentIndex;
     return [myViewControllers objectAtIndex:currentIndex];
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController
-      viewControllerAfterViewController:(UIViewController *)viewController
-{
+      viewControllerAfterViewController:(UIViewController *)viewController{
     NSUInteger currentIndex = [myViewControllers indexOfObject:viewController];
     
     ++currentIndex;
     currentIndex = currentIndex % (myViewControllers.count);
+    currentPageIndex=currentIndex;
     return [myViewControllers objectAtIndex:currentIndex];
 }
 
 -(NSInteger)presentationCountForPageViewController:
-(UIPageViewController *)pageViewController
-{
+(UIPageViewController *)pageViewController{
     return myViewControllers.count;
 }
 
 -(NSInteger)presentationIndexForPageViewController:
-(UIPageViewController *)pageViewController
-{
-    return 0;
+(UIPageViewController *)pageViewController{
+    return currentPageIndex;
 }
 
 

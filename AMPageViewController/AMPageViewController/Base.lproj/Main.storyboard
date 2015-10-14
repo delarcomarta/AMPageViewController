@@ -59,7 +59,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.69411764710000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="142"/>
@@ -87,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.80412212169999997" blue="0.3155838816" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="142"/>
@@ -103,6 +103,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIN-ds-knW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882" y="335"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gpf-PS-xdw">
+            <objects>
+                <viewController storyboardIdentifier="Intro3ID" id="qhS-Bj-T1r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2yr-em-haa"/>
+                        <viewControllerLayoutGuide type="bottom" id="2KH-3t-erm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5u-5S-JuH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pantalla 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oix-0f-3hP">
+                                <rect key="frame" x="69" y="24" width="182" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99340969324111938" green="0.33042639493942261" blue="0.33035477995872498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="142"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RK-pq-ZWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="723"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WRZ-5G-GGx">
+            <objects>
+                <viewController storyboardIdentifier="Intro4ID" id="3ak-Rl-TS4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nFk-6K-ftg"/>
+                        <viewControllerLayoutGuide type="bottom" id="TiH-zB-fbe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W95-0h-c0h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pantalla 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-u9-cb7">
+                                <rect key="frame" x="69" y="24" width="182" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55314555919999997" green="0.90738075659999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="142"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKE-Ig-JEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="723"/>
         </scene>
     </scenes>
 </document>

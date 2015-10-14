@@ -10,6 +10,7 @@
 
 @interface ContainerViewController : UIPageViewController<UIPageViewControllerDelegate, UIPageViewControllerDataSource>{
     NSArray *myViewControllers;
+    NSInteger currentPageIndex;
 }
 
 @property (assign, nonatomic) NSInteger index;
